@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upendra Sharma | Full-Stack Developer</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Upendra Sharma</h1>
+            <h2>Full-Stack Developer</h2>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="about">
+            <h3>About Me</h3>
+            <img src="UpendraS.jpg" alt="" class="profile-pic">
+            <p>Enthusiastic Full Stack Developer with a Master's in IT, proficient in HTML, CSS, JavaScript, ReactJs, Redux, and 
+                MongoDB, with a solid foundation in both front-end and back-end development through academic projects. Eager to 
+                leverage strong technical skills and a passion for coding to contribute effectively to dynamic development teams.</p>
+
+        </div>        
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h3>Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">HTML</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+
+        <div class="project1">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Calculator Project</h3>
+            <p>A simple calculator application built using HTML, CSS, and JavaScript. This project demonstrates my skills in front-end development.</p>
+        </div>
+            <div id="calculator">
+                <div id="brand">US Calculator</div>
+
+                <input id="display" readonly value="0">    
+                <div id="keys">
+                    <button onclick="clearDisplay()" class="operator-btn">AC</button>
+                    <button onclick="appendToDisplay('%')" class="operator-btn">%</button>
+                    <button onclick="appendToDisplay('/')" class="operator-btn">÷</button>
+                    <button onclick="deleteLast()" class="operator-btn">⌫</button>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('*')" class="operator-btn">×</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('00')">00</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="calculate()" class="operator-btn">=</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add more projects as needed -->
+    </section>
+
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Upendra Sharma | Full-Stack Developer</p>
+        </div>
+    </footer>
+
+    <script src="test.js"></script>
+</body>
+</html>
